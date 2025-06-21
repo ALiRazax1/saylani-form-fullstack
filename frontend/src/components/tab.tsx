@@ -55,7 +55,7 @@ const [cnic,setCnic] = useState('')
   const onSubmit: SubmitHandler<IFormInput> = async (data:IFormInput) =>{
   
     try {
-      await axios.post("http://localhost:4000/api/create",data,{
+      await axios.post(`${import.meta.env.VITE_API_URL}/api/create`,data,{
         headers:{
           "Content-Type":"multipart/form-data"
         }
@@ -75,7 +75,7 @@ const [cnic,setCnic] = useState('')
 
  async function findUser(){
   try {
-    const response = await axios.get("http://localhost:4000/api");
+    const response = await axios.get(`${import.meta.env.VITE_API_URL}/api`);
     const {data} = response
     const requestedUser =  data.Users.find((e:any)=>  searchInput == e.cnic)
 
