@@ -1,6 +1,5 @@
 import Tab from "./components/tab"
 import "./App.css"
-import IDCard from "./components/idcard"
 export function App(){
   return(
     <>

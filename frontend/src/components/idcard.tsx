@@ -1,6 +1,6 @@
 // IDCard.jsx
 import React from "react";
-import { Input, QRCode, Space,Button, Row, Col } from 'antd';
+import {QRCode, Space, Row, Col } from 'antd';
 
 
 const IDCard = ({img,name,course,faterName,cnic}) => {

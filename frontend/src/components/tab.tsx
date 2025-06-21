@@ -1,5 +1,5 @@
 
-import { Button, Tabs, Row, Col, Input, Select, Upload,Space, Table, Tag } from 'antd';
+import { Button, Tabs, Row, Col, Input, Select, Upload} from 'antd';
 import { PlusOutlined } from '@ant-design/icons';
 import * as InputTypes from "../types/formFiledsTypes";
 import type { IFormInput } from '../types/formFiledsTypes';
