@@ -299,6 +299,8 @@ const [cnic,setCnic] = useState('')
                   name="fatherCnic"
                   control={control}
                   render={({ field }) => (
+                    // @ts-ignore
+
                     <Input {...field} placeholder="Father CNIC" type="number" />
                   )}
                 />

@@ -2,6 +2,7 @@
 import React from "react";
 import {QRCode, Space, Row, Col } from 'antd';
 
+// @ts-ignore
 
 const IDCard = ({img,name,course,faterName,cnic}) => {
     const [text, setText] = React.useState('');
@@ -46,6 +47,8 @@ const IDCard = ({img,name,course,faterName,cnic}) => {
       <div style={{textAlign:"center"}}>
        <Space  direction="vertical" align="center">
       <QRCode style={{width:"140px"}} value={text || '-'}
+      // @ts-ignore
+
       onChange={(e) => setText(e.target.value)}
       />
     
